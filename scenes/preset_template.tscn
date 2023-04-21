@@ -1,0 +1,52 @@
+[gd_scene format=2]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "Solid colors preset"
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
+
+[node name="MainVContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnBar" type="Control" parent="MainVContainer"]
+margin_right = 600.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="ColorRect" type="ColorRect" parent="MainVContainer/ReturnBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.156863, 0.156863, 0.156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonContainer" type="HBoxContainer" parent="MainVContainer/ReturnBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnButton" type="Button" parent="MainVContainer/ReturnBar/ButtonContainer"]
+margin_right = 54.0
+margin_bottom = 50.0
+text = "Return"
+
+[node name="ScreenSpace" type="Control" parent="MainVContainer"]
+margin_top = 54.0
+margin_right = 600.0
+margin_bottom = 1024.0
+size_flags_vertical = 3

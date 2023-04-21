@@ -1,0 +1,745 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://MaskEmulator.gd" type="Script" id=2]
+[ext_resource path="res://assets/imgs/led_pixel.png" type="Texture" id=3]
+[ext_resource path="res://assets/imgs/mask.png" type="Texture" id=4]
+
+[node name="MaskEmulator" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+alignment = 1
+
+[node name="MaskContainer" type="Control" parent="Menu"]
+margin_top = 262.0
+margin_right = 600.0
+margin_bottom = 762.0
+rect_min_size = Vector2( 0, 500 )
+size_flags_horizontal = 3
+
+[node name="MaskTexture" type="TextureRect" parent="Menu/MaskContainer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -225.0
+margin_top = -239.5
+margin_right = 225.0
+margin_bottom = 239.5
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LEDs" type="Control" parent="Menu/MaskContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "Start from 1."
+}
+
+[node name="0" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 103.0
+margin_top = 89.0
+margin_right = 121.0
+margin_bottom = 107.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 94.0
+margin_top = 127.0
+margin_right = 112.0
+margin_bottom = 145.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+
+[node name="2" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 93.0
+margin_top = 159.0
+margin_right = 111.0
+margin_bottom = 177.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+
+[node name="3" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 93.0
+margin_top = 202.0
+margin_right = 111.0
+margin_bottom = 220.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+
+[node name="4" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 104.0
+margin_top = 238.0
+margin_right = 122.0
+margin_bottom = 256.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+
+[node name="5" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 115.0
+margin_top = 278.0
+margin_right = 133.0
+margin_bottom = 296.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+
+[node name="6" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 130.0
+margin_top = 318.0
+margin_right = 148.0
+margin_bottom = 336.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+
+[node name="7" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 143.0
+margin_top = 358.0
+margin_right = 161.0
+margin_bottom = 376.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+
+[node name="8" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 154.0
+margin_top = 396.0
+margin_right = 172.0
+margin_bottom = 414.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+
+[node name="9" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 172.0
+margin_top = 433.0
+margin_right = 190.0
+margin_bottom = 451.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+
+[node name="10" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 209.0
+margin_top = 436.0
+margin_right = 227.0
+margin_bottom = 454.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="11" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 197.0
+margin_top = 399.0
+margin_right = 215.0
+margin_bottom = 417.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="12" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 186.0
+margin_top = 361.0
+margin_right = 204.0
+margin_bottom = 379.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="13" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 173.0
+margin_top = 321.0
+margin_right = 191.0
+margin_bottom = 339.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="14" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 158.0
+margin_top = 281.0
+margin_right = 176.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="15" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 147.0
+margin_top = 241.0
+margin_right = 165.0
+margin_bottom = 259.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="16" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 136.0
+margin_top = 205.0
+margin_right = 154.0
+margin_bottom = 223.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="17" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 127.0
+margin_top = 163.0
+margin_right = 145.0
+margin_bottom = 181.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="18" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 128.0
+margin_top = 131.0
+margin_right = 146.0
+margin_bottom = 149.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="19" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 141.0
+margin_top = 94.0
+margin_right = 159.0
+margin_bottom = 112.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="20" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 184.0
+margin_top = 99.0
+margin_right = 202.0
+margin_bottom = 117.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="21" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 185.0
+margin_top = 205.0
+margin_right = 203.0
+margin_bottom = 223.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="22" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 192.0
+margin_top = 246.0
+margin_right = 210.0
+margin_bottom = 264.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="23" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 198.0
+margin_top = 283.0
+margin_right = 216.0
+margin_bottom = 301.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="24" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 211.0
+margin_top = 318.0
+margin_right = 229.0
+margin_bottom = 336.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="25" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 222.0
+margin_top = 360.0
+margin_right = 240.0
+margin_bottom = 378.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="26" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 229.0
+margin_top = 398.0
+margin_right = 247.0
+margin_bottom = 416.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="27" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 245.0
+margin_top = 442.0
+margin_right = 263.0
+margin_bottom = 460.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="28" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 308.0
+margin_top = 442.0
+margin_right = 326.0
+margin_bottom = 460.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="29" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 319.0
+margin_top = 396.0
+margin_right = 337.0
+margin_bottom = 414.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="30" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 337.0
+margin_top = 357.0
+margin_right = 355.0
+margin_bottom = 375.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="31" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 344.0
+margin_top = 319.0
+margin_right = 362.0
+margin_bottom = 337.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="32" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 357.0
+margin_top = 281.0
+margin_right = 375.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="33" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 366.0
+margin_top = 246.0
+margin_right = 384.0
+margin_bottom = 264.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="34" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 372.0
+margin_top = 208.0
+margin_right = 390.0
+margin_bottom = 226.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="35" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 390.0
+margin_top = 105.0
+margin_right = 408.0
+margin_bottom = 123.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="36" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 437.0
+margin_top = 106.0
+margin_right = 455.0
+margin_bottom = 124.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="37" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 446.0
+margin_top = 144.0
+margin_right = 464.0
+margin_bottom = 162.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="38" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 440.0
+margin_top = 182.0
+margin_right = 458.0
+margin_bottom = 200.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="39" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 431.0
+margin_top = 214.0
+margin_right = 449.0
+margin_bottom = 232.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="40" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 420.0
+margin_top = 251.0
+margin_right = 438.0
+margin_bottom = 269.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="41" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 406.0
+margin_top = 287.0
+margin_right = 424.0
+margin_bottom = 305.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="42" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 397.0
+margin_top = 322.0
+margin_right = 415.0
+margin_bottom = 340.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="43" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 378.0
+margin_top = 364.0
+margin_right = 396.0
+margin_bottom = 382.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="44" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 358.0
+margin_top = 406.0
+margin_right = 376.0
+margin_bottom = 424.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="45" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 352.0
+margin_top = 441.0
+margin_right = 370.0
+margin_bottom = 459.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="46" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 394.0
+margin_top = 435.0
+margin_right = 412.0
+margin_bottom = 453.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="47" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 409.0
+margin_top = 402.0
+margin_right = 427.0
+margin_bottom = 420.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="48" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 420.0
+margin_top = 366.0
+margin_right = 438.0
+margin_bottom = 384.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="49" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 434.0
+margin_top = 322.0
+margin_right = 452.0
+margin_bottom = 340.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="50" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 445.0
+margin_top = 283.0
+margin_right = 463.0
+margin_bottom = 301.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="51" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 461.0
+margin_top = 248.0
+margin_right = 479.0
+margin_bottom = 266.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="52" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 469.0
+margin_top = 211.0
+margin_right = 487.0
+margin_bottom = 229.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="53" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 480.0
+margin_top = 181.0
+margin_right = 498.0
+margin_bottom = 199.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="54" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 480.0
+margin_top = 142.0
+margin_right = 498.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="55" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 478.0
+margin_top = 104.0
+margin_right = 496.0
+margin_bottom = 122.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="56" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 477.0
+margin_top = 103.0
+margin_right = 495.0
+margin_bottom = 121.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="57" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 326.0
+margin_top = 106.0
+margin_right = 344.0
+margin_bottom = 124.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="58" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 289.0
+margin_top = 106.0
+margin_right = 307.0
+margin_bottom = 124.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="59" type="TextureRect" parent="Menu/MaskContainer/LEDs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 250.0
+margin_top = 106.0
+margin_right = 268.0
+margin_bottom = 124.0
+rect_pivot_offset = Vector2( 9, 9 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

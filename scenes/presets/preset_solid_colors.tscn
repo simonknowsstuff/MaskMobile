@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/preset_scripts/solid_colors.gd" type="Script" id=1]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "Solid colors preset"
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainVContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnBar" type="Control" parent="MainVContainer"]
+margin_right = 600.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="ColorRect" type="ColorRect" parent="MainVContainer/ReturnBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.156863, 0.156863, 0.156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonContainer" type="HBoxContainer" parent="MainVContainer/ReturnBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnButton" type="Button" parent="MainVContainer/ReturnBar/ButtonContainer"]
+margin_right = 54.0
+margin_bottom = 50.0
+text = "Return"
+
+[node name="ScreenSpace" type="Control" parent="MainVContainer"]
+margin_top = 54.0
+margin_right = 600.0
+margin_bottom = 1024.0
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainVContainer/ScreenSpace"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -178.5
+margin_top = -352.0
+margin_right = 178.5
+margin_bottom = 352.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorPicker" type="ColorPicker" parent="MainVContainer/ScreenSpace/VBoxContainer"]
+margin_right = 357.0
+margin_bottom = 462.0
+
+[connection signal="color_changed" from="MainVContainer/ScreenSpace/VBoxContainer/ColorPicker" to="." method="_on_ColorPicker_color_changed"]

@@ -1,0 +1,115 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/preset_scripts/audio_visualizer.gd" type="Script" id=1]
+[ext_resource path="res://deadmau5 - Strobe.mp3" type="AudioStream" id=2]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "Solid colors preset"
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
+
+[node name="MainVContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnBar" type="Control" parent="MainVContainer"]
+margin_right = 600.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="ColorRect" type="ColorRect" parent="MainVContainer/ReturnBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.156863, 0.156863, 0.156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonContainer" type="HBoxContainer" parent="MainVContainer/ReturnBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnButton" type="Button" parent="MainVContainer/ReturnBar/ButtonContainer"]
+margin_right = 54.0
+margin_bottom = 50.0
+text = "Return"
+
+[node name="ScreenSpace" type="Control" parent="MainVContainer"]
+margin_top = 54.0
+margin_right = 600.0
+margin_bottom = 1024.0
+size_flags_vertical = 3
+
+[node name="AudioContainer" type="VBoxContainer" parent="MainVContainer/ScreenSpace"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -225.0
+margin_top = -250.0
+margin_right = 225.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 450, 490 )
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LiveVisualizer" type="Control" parent="MainVContainer/ScreenSpace/AudioContainer"]
+margin_right = 450.0
+margin_bottom = 456.0
+rect_min_size = Vector2( 450, 450 )
+size_flags_vertical = 3
+
+[node name="FileOpener" type="Button" parent="MainVContainer/ScreenSpace/AudioContainer"]
+margin_top = 460.0
+margin_right = 450.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 0, 40 )
+text = "Load mp3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MusicLoadDialog" type="FileDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -250.0
+margin_top = -350.0
+margin_right = 250.0
+margin_bottom = 350.0
+rect_min_size = Vector2( 500, 700 )
+window_title = "Open a File"
+dialog_text = "Open an mp3 file to use with the visualizer."
+mode = 0
+access = 1
+filters = PoolStringArray( "*.mp3" )
+current_dir = "user://home/simon/Documents/Godot Projects/Mask Mobile"
+current_path = "user://home/simon/Documents/Godot Projects/Mask Mobile/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
+bus = "Music"
+
+[connection signal="pressed" from="MainVContainer/ScreenSpace/AudioContainer/FileOpener" to="." method="_on_FileOpener_pressed"]
